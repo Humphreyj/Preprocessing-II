@@ -1,1 +1,27 @@
 // Mixins in here
+.display-flex(@justify,@align,@direction) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.pesky-buttons(@font-size,@b-radius,@bg-color,@color,@text-align,@padding) {
+    font-size: @font-size;
+    border-radius: @b-radius;
+    background-color: @bg-color;
+    color: @color;
+    text-align: @text-align;
+    padding: @padding;
+    transition: all .3s ease;
+}
+
+.pesky-buttons-hover(@bg-color,@color) {
+    background-color: @bg-color;
+    color: @color;
+}
+
+.img-slide() {
+    
+}
+
