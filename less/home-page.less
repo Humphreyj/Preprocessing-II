@@ -114,12 +114,17 @@
   }
 
   .contact {
-    width: 95%;
+    .display-flex(center,center,column);
+    width: 80%;
     margin: 0 auto;
     font-size: 1.9em;
     form {
-      h1 {
+      .display-flex(center,center,column);
+      .title {
         text-align: center;
+        width: 60%;
+        margin: 0 auto;
+       
       }
       .client-info {
         padding: .5em 0em;
@@ -128,9 +133,12 @@
         input {
           padding: .5em;
           margin: .5em;
+          @media @mobile {
+            width: 100%;
+          }
         }
       }
-      .display-flex(center,center,column);
+      
       .checkboxes {
         .display-flex(space-evenly,center,row);
         flex-wrap: wrap;

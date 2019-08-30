@@ -401,7 +401,11 @@ header .header-image .header-text p {
   color: #057b80;
 }
 .home .contact {
-  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
   margin: 0 auto;
   font-size: 1.9em;
 }
@@ -411,8 +415,10 @@ header .header-image .header-text p {
   align-items: center;
   flex-direction: column;
 }
-.home .contact form h1 {
+.home .contact form .title {
   text-align: center;
+  width: 60%;
+  margin: 0 auto;
 }
 .home .contact form .client-info {
   padding: 0.5em 0em;
@@ -425,6 +431,11 @@ header .header-image .header-text p {
 .home .contact form .client-info input {
   padding: 0.5em;
   margin: 0.5em;
+}
+@media (max-width: 500px) {
+  .home .contact form .client-info input {
+    width: 100%;
+  }
 }
 .home .contact form .checkboxes {
   display: flex;
