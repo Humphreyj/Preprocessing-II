@@ -106,15 +106,52 @@
         @media @mobile {
           .pesky-buttons(2.4em,12px,#0d72c4,white,center,.3em 3em);
         }
-        // font-size: 3.2em;
-        // border-radius: 10px;
-        // background-color: #079196;
-        // color: white;
-        // text-align: center;
-        // padding: .25em 1em;
+      }
+      .btn:hover {
+        .pesky-buttons-hover(white,#057b80);
       }
     }
   }
+
+  .contact {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.9em;
+    form {
+      h1 {
+        text-align: center;
+      }
+      .client-info {
+        padding: .5em 0em;
+        .display-flex(space-evenly,center, row);
+        flex-wrap: wrap;
+        input {
+          padding: .5em;
+          margin: .5em;
+        }
+      }
+      .display-flex(center,center,column);
+      .checkboxes {
+        .display-flex(space-evenly,center,row);
+        flex-wrap: wrap;
+        padding: .5em 0em;
+        .box {
+          padding: .3em;
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 6em;
+        margin-bottom: 1em;
+      }
+      button {
+        .pesky-buttons(1.8em,10px,#0d72c4,white,center,.3em 3em);
+        margin-bottom: 1em;
+      }
+    }
+    //form
+  }
+  //contact
 
   
 }// home
